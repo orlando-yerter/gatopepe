@@ -54,12 +54,12 @@ ROOT_URLCONF = 'gatopepe.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["/home/orlando/gatopepe/gatopepe/plantillas/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',
+                'django.template.contedpkg --listxt_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -77,6 +77,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        "USER": "postgres",
+        'PASSWORD': "gatopepe",
+        "HOST": "localhost",
+        "DATABASE_PORT": "5432",
+        
     }
 }
 
